@@ -1,0 +1,117 @@
+ body {
+        width: 100wh;
+        height: 90vh;
+        color: #fff;
+        margin: 0;
+        background: linear-gradient(-45deg, #71a98b, #b15c8e, #dc6b68, #6c5a94, #b14c4e, #736357);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 5.5s ease infinite;
+        -moz-animation: Gradient 5.5s ease infinite;
+        animation: Gradient 5.5s ease infinite;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+#header {
+    /* padding-top: 5px; */
+    padding-left: 15px;
+    color: #ffffff;
+    position: absolute;
+    float: right;
+    display: block;
+}
+
+a {
+    color: #46c136;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #aefda3;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 45px;
+    text-align: center;
+    color: #ffd1d1
+}
+
+p {
+    font-size: 25px;
+}
+
+p2 {
+    font-size: 25px;
+    color: #ffd1d1
+}
+
+hr {
+    border: 2px solid #ffd1d1
+}
+
+#footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-right: 10px;
+    color: white;
+    text-align: right;
+    font-size: 15px !important;
+}
+
+/* Navbar css */
+#navbar {    
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.377);
+    transform: translateY(-100%);
+    transition: transform .5s cubic-bezier(.4,0,.2,1);
+  }
+  #navbar a {
+      color: white;
+      text-decoration: none;
+  }
+  #navbar > * {
+    padding: 1rem;
+  }
+  .nav-container:hover #navbar {
+    transform: translateY(0);
+  }
