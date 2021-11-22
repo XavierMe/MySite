@@ -1,0 +1,119 @@
+|||||| Visual ||||||
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 1.25rem;
+  position: relative;
+  margin: 32px;
+}
+
+/* Button 1*/
+
+.btn-1 {
+  color: rgb(255, 255, 255);
+}
+
+.btn-1::after,
+.btn-1::before {
+  border: 3px solid rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-1:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn-1:hover::before {
+  transform: translate(5px, 5px);
+}
+
+/* Button 2 */
+
+.btn-2 {
+  color: rgb(255, 255, 255);
+}
+
+.btn-2::after,
+.btn-2::before {
+  border: 3px solid rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-2:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn-2:hover::before {
+  transform: translate(5px, 5px);
+}
+
+/* Button 3 */
+
+.btn-3 {
+  color: rgb(255, 255, 255);
+}
+
+.btn-3::after,
+.btn-3::before {
+  border: 3px solid rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-3:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn-3:hover::before {
+  transform: translate(5px, 5px);
+}
