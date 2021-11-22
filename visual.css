@@ -1,6 +1,3 @@
-|||||| Visual ||||||
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -116,4 +113,14 @@ body {
 
 .btn-3:hover::before {
   transform: translate(5px, 5px);
+}
+
+
+.background1 {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url("FUCKYOUWANTBITCHSTOPCOPYINGSHIT.jpg");
+    background-size: cover;
+    opacity: 0.15;
 }
