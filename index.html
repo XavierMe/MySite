@@ -1,68 +1,97 @@
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Heyo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/c6a08630d5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="shortcut icon" type="image/png" href="x.png">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Heyo</title>
-  <meta name="author" content="Xavierr">
-  <meta name="og:title" property="og:title">
-  <meta name="theme-color" content="#242424">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="x.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">  
-</head>
+    </head>
+    <body>
+        <div class="content" id="content" style="opacity: 0;">
+			<h1 id="textgoeshere"style="opacity: 0;">a</h1>
+			<div class="buttons2">
+                <a class="button hover-github half-transparent-text" href="https://github.com/xavierme" target="_blank">
+                    <i class="fab fa-github-square half-transparent-text"></i>
+                </a>
 
-  <!--
-<body>
-  <div class="nav-container">
-    <nav id='navbar'>
-      <div class="link-container hvr-grow">
-        <a href='/' class="nav-link"><i class="fas fa-home"></i> Home</a>
-      </div>
-      <div class="link-container hvr-grow">
-        <a href='mailto://xavier@xavierme.us' class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-      </div>
-    </nav>
-  </div>
--->
+                <a class="button hover-mail half-transparent-text" href='mailto://xavier@xavierme.us' target="_blank">
+                    <i class="fa fa-envelope half-transparent-text"></i>
+                </a>
 
-  <!-- if dont want right click
-<body oncontextmenu="return false;">
--->
+                <a class="button hover-twitch half-transparent-text" href="https://www.twitch.tv/xaviermee" target="_blank">
+                    <i class="fab fa-twitch half-transparent-text"></i>
+                </a>
 
-  <div id="container">
-    <h2>
-      Hey!
-    </h2>
-    <hr>
-    <p2>
-      I'm <p2 style="cursor:pointer;" onclick="toggle()">Xavier</p2> :D
-    </p2>
-    <div id="links">
-      <p>
-        <a target="_blank" href="https://discordapp.com/users/239737153679130624" ><i class="fab fa-discord hvr-grow"></i></a>
-        <a href='mailto://xavier@xavierme.us' class="nav-link"><i class="fas fa-envelope"></i></a>
-        <a target="_blank" href="https://twitch.tv/xaviermee"><i class="fab fa-twitch hvr-grow"></i></a>
-        <a target="_blank" href="https://github.com/xavierme"><i class="fab fa-github hvr-grow"></i></a>
-        <a target="_blank" href="https://xavierme.us/visual"><i class="fa fa-download hvr-grow"></i></a>
-      </p>
-    </div>
-  </div>
-  <div id="footer">
-    <h2 class="hvr-grow">
-      <a onclick="toggle()">:P</a><br>
-      <p2 id="toggle"></p2>
-    </h2>
-  </div>
-  <script>
-    var tog = false
-    function toggle() {
-      tog = !tog
-      document.getElementById("toggle").innerHTML = tog ? 'Woah chill' : null;
-    }
-  </script>  
-</body>
+				<a class="button hover-discord half-transparent-text" href="https://discordapp.com/users/239737153679130624" target="_blank">
+					<i class="fab fa-discord half-transparent-text"></i>
+				</a>
+
+                <a class="button hover-download half-transparent-text" href="https://xavierme.us/visual" target="_blank">
+                    <i class="fa fa-download half-transparent-text"></i>
+                </a>
+			</div>
+		</div>
+    </body>
+    <script>
+        let i = 0;
+		let text = "XavierMe";
+		const elem = document.getElementById("textgoeshere");
+		function type() {
+			if (i < text.length) {
+				elem.innerHTML += text.charAt(i);
+				i++;
+				setTimeout(type, 80);
+			}
+		}
+        let opacity_ = 0;
+		const elem2 = document.getElementById("content");
+
+		function opacity() {
+			if (opacity_ < 100) {
+				opacity_++;
+				elem2.style.setProperty('opacity', `${opacity_}%`);
+				setTimeout(opacity, 35 - (opacity_/ 1.5));
+			} else {
+				elem.innerHTML = "";
+				elem.style.setProperty('opacity', `100%`);
+				type();
+			}
+		}
+		setTimeout(opacity, 250);
+    </script>
+<div class="background1"></div>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--            <div class="buttons">           
+                <a class="button2 hover-home" href="https://Xavierme.us" target="_blank">
+                    Home
+                </a>
+            </div>
+-->
