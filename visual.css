@@ -1,17 +1,23 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    user-select: none;
 }
 
-html,
 body {
-  height: 100%;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #222127;
 }
 
 .container {
@@ -113,14 +119,4 @@ body {
 
 .btn-3:hover::before {
   transform: translate(5px, 5px);
-}
-
-
-.background1 {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-image: url("FUCKYOUWANTBITCHSTOPCOPYINGSHIT.jpg");
-    background-size: cover;
-    opacity: 0.15;
 }
